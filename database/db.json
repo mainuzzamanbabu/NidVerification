@@ -1,0 +1,53 @@
+{
+  "person": [
+    {
+      "nidno": 198667889834221,
+      "personname": "RIDOWAN KHONDOKAR",
+      "fathername": "MD AKKAS ALI",
+      "mothername": "SABINA BEGUM",
+      "dateofbirth": "21-07-1986"
+    },
+    {
+      "nidno": 19608192227217990,
+      "personname": "Sadman Anik",
+      "fathername": "Md Abul Kasem",
+      "mothername": "Nusrat Parvin",
+      "dateofbirth": "01-09-2003"
+    },
+    {
+      "nidno": 3305782454,
+      "personname": "S M NEAJ MORSHED",
+      "fathername": "LATE SIRAJUL ISLAM",
+      "mothername": "SAJEDA ISLAM",
+      "dateofbirth": "10-10-1995"
+    },
+    {
+      "nidno": 8668944260,
+      "personname": "Pias Mia",
+      "fathername": "Md Salim Mia",
+      "mothername": "Mst Ambia Begum",
+      "dateofbirth": "08-03-1996"
+    },
+    {
+      "nidno": 8673674936,
+      "personname": "ROMANA RAHMAN",
+      "fathername": "SOHRAB UDDIN KHAN",
+      "mothername": "FIROJA BEGUM",
+      "dateofbirth": "12-05-1975"
+    },
+    {
+      "nidno": 3811318941,
+      "personname": "ARIF HOSSAIN",
+      "fathername": "SADIK HOSSAIN",
+      "mothername": "MARIA BEGUM",
+      "dateofbirth": "05-06-2000"
+    },
+    {
+      "nidno": 3523205118607,
+      "personname": "S.M.Habibur Rahaman",
+      "fathername": "Mosharraf Hossain",
+      "mothername": "Maria Begum",
+      "dateofbirth": "15-08-1985"
+    }
+  ]
+}

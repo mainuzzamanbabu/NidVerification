@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>NID Verification Using Blockchain</title>
+    <script src="https://cdn.jsdelivr.net/npm/web3@latest/dist/web3.min.js"></script>
+    <script src="https://unpkg.com/moralis/dist/moralis.js"></script>
+  
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+      rel="stylesheet"
+    />
+    
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap"
+      rel="stylesheet"
+    />
+    
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.6.0/mdb.min.css"
+      rel="stylesheet"
+    />
+    <style>
+      body {
+        text-align: center;
+        background-color: #04001a;
+      }
+      #app {
+        display: none;
+        margin-top: 10px;
+        height: 400px;
+        background-color: white;
+        padding: 20px;
+        border-radius: 20px;
+        color: #424242;
+      }
+      .form_element {
+        margin-top: 20px;
+      }
+      .title {
+        color: rgb(246, 103, 103);
+        font-weight: bold;
+        margin-top: 10px;
+        font-size: 30px;
+        margin-top: 20px;
+
+      }
+      #success_message {
+        background-color: #c4ffc4;
+        border: 1px solid #0fcf0f;
+        border-radius: 4px;
+        display: none;
+      }
+      #submit_button{
+        margin-bottom: 100px;
+        background: #0793e4;
+        color: white;
+        border-style: outset;
+        border-color: #0066A2;
+        height: 50px;
+        width: 150px;
+        font: bold15px arial,sans-serif;
+        text-shadow: none;
+        border-radius: 6px;
+      }
+  
+    </style>
+    <!-- <script src="https://cdn.tailwindcss.com"></script> -->
+  </head>
+
+  <body>
+    <div>
+      <div class="row">
+        <div class="title">NID NFT Minter & Verifier</div>
+        
+        <div id="app" class="col-md-6 offset-md-3">
+          <div id="success_message"></div>
+          <div class="container">
+            <div class="form_element">
+              <input class="form-control type="text" id="input_name" name="name"
+              placeholder="Name of the person">
+            </div>
+        
+            <div class="form_element">
+              <input class="form-control type="number" id="input_nidno"
+              name="nidno" placeholder="NID Number">
+            </div>
+            <div class="form_element">
+              <input class="form-control type="text" id="input_fathername"
+              name="fathername" placeholder="Father's Name">
+            </div>
+            <div class="form_element">
+              <input class="form-control type="text" id="input_mothername"
+              name="mothername" placeholder="Mother's name">
+            </div>
+            <div class="form_element">
+              <input class="form-control type="text" id="input_dateofbirth"
+              name="dateofbirth" placeholder="Date of Birth(dd-mm-yyyy)">
+            </div>
+            <div class="form_element">
+              <button class="btn btn-primary btn-lg btn-block" id="check_valid">
+                Check Validity
+              </button>
+            </div>
+          </div>
+         <br><br>
+         <div class="title">Minting Section</div>
+         <div class="container">
+            <div class="form_element">
+              <input class="form-control type="text" id="input_name2" name="name2"
+              placeholder="Name of the person" readonly >
+            </div>
+            <div class="form_element">
+              <input class="form-control type="text" id="input_description"
+              name="description" placeholder="All Data" readonly>
+            </div>
+            <div class="form_element">
+              <input
+                class="form-control"
+                type="file"
+                id="input_image"
+                name="image"
+                accept="image/png, image/jpeg"
+              />
+            </div>
+            <div class="form_element">
+              <button id="submit_button" >
+                Submit
+              </button>
+          </div>
+        </div>
+        </div>
+      </div>
+            <table text-color: rgb(87, 85, 85);>
+              <tbody id="tbody"></tbody>
+            </table>
+    
+    <script type="text/javascript" src="./main.js"></script>
+
+  </body>
+</html>
