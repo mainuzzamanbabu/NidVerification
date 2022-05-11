@@ -125,7 +125,7 @@ async function submit() {
   console.log(res);
   document.querySelector(
     "#success_message"
-  ).innerHTML = `NFT minted. <a href="https://rinkeby.rarible.com/token/${res.data.result.tokenAddress}:${res.data.result.tokenId}">View NFT`;
+  ).innerHTML = `Your NID NFT is minted. <a href="https://rinkeby.rarible.com/token/${res.data.result.tokenAddress}:${res.data.result.tokenId}">View NID NFT`;
   document.querySelector("#success_message").style.display = "block";
   setTimeout(() => {
     document.querySelector("#success_message").style.display = "none";
